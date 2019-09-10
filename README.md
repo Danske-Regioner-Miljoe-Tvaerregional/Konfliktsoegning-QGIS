@@ -1,0 +1,2 @@
+# Konfliktsoegning-QGIS
+Konfliktsøgning QGIS
