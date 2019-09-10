@@ -1,0 +1,27 @@
+{
+  "profiles": {
+    "test" : {"file": "test.qlr" , "tool": 0, "buffer": 100.0, "type": 0, "link": ""},
+    "Råstof sagsbehandling" : {"file": "Raastofsag.qlr" , "tool": 0, "buffer": 100.0, "type": 0, "link": ""},
+    "Råstof §52 sagsbehandling": {"file": "Raastofparagraf52.qlr", "tool": 0, "buffer": 100.0  , "type": 0, "link": ""}
+  },
+  "adm_layer": {
+    "uri": "M:/Grundkort/MATRIKEL/BASIS/jordstykke.TAB",
+    "name": "jordstykke",
+    "epsg": "EPSG:25832",
+    "type": "ogr",
+    "encoding":"utf-8"
+  },
+  "analysis": {
+    "group"   : { "name": "Konfliktanalyse"},
+    "layers"  : { "name": "Fundne lag",      "layername": "Temaer", "number": "Fundet", "selected": "Valgt"},
+    "objects" : { "name": "Fundne objekter", "layername": "Temaer", "result": "Søgeresultat", "url1": "Link1", "url2": "Link2"},
+    "conflict": { "name": "Søgning", "style_pol": "conflict_pol.qml", "style_lin": "conflict_lin.qml", "style_pnt": "conflict_pnt.qml"},
+    "buffer"  : { "name": "Buffer" , "style_pol": "buffer_pol.qml"},
+    "zoomto"  : { "name": "Zoom"   , "style_pol": "zoomto_pol.qml", "style_lin": "zoomto_lin.qml", "style_pnt": "zoomto_pnt.qml", "buffer": "20.0"}
+  },
+  "reports": {
+    "PDF file"               : { "type": "pdf", "template": "Regsyd.qpt", "directory":"c:/temp", "dialog" : "True", "lwidth":[31.0,9.0,9.0], "owidth":[31.0,31.0,31.0,31.0]},
+    "CSV/Clipboard"          : { "type": "csv", "directory":"clipboard"},
+    "Canvas bitmap/clipboard": { "type": "image", "directory":"clipboard"}
+  } 
+}
